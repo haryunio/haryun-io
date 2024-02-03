@@ -1,2 +1,3 @@
 # haryun-io
-Haryun's blog
+
+Simple repository for my blog.
