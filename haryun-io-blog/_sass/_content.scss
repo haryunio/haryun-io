@@ -4,7 +4,7 @@
 
 .post {
   border-bottom: 1px solid _palette(border);
-  padding: 3.33333em 0 1.66667em;
+  padding: 1.66667em 0 1em;
 }
 
 .post-header {
@@ -170,5 +170,20 @@
   .archive-date {
     font-size: 14px;
     font-weight: bold;
+  }
+}
+
+/* Nested posts adjustments for Article/Portfolio pages */
+.post-content {
+  > .post:last-child {
+    border-bottom: 0;
+  }
+  
+  > .page-description + hr {
+    margin: 1.5em 0;
+  }
+  
+  > hr + .post {
+    padding-top: 1.5em;
   }
 }
