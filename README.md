@@ -94,25 +94,28 @@ Edit `haryun-io-blog/about.markdown` to update your about page.
 
 ## 🔨 Building the Site
 
-### Method 1: Using the Build Script (Recommended)
-
-From the repository root:
-```bash
-./run-build.sh
-```
-
-This script will:
-1. Navigate to `haryun-io-blog/`
-2. Build the Jekyll site using `bundle exec jekyll build`
-3. Copy the generated site from `_site/` to `../docs/`
-
-### Method 2: Manual Build
+### Local Testing
 
 ```bash
 cd haryun-io-blog
 bundle exec jekyll build
-cp -r _site/* ../docs/
 ```
+
+Or use the build script:
+```bash
+./run-build.sh
+```
+
+### Production Deployment
+
+**This blog uses GitHub Actions for automatic deployment!**
+
+No manual building needed. When you push to the `main` branch, GitHub Actions will:
+1. Automatically build your Jekyll site
+2. Deploy it to GitHub Pages
+3. Make it live at your custom domain
+
+See [Deploying Changes](#-deploying-changes) below for details.
 
 ## 👀 Local Development
 
@@ -136,16 +139,55 @@ bundle exec jekyll serve --livereload
 
 ## 📤 Deploying Changes
 
+### Automatic Deployment with GitHub Actions
+
 1. Make your edits in the `haryun-io-blog/` directory
-2. Build the site using `./run-build.sh`
-3. Commit and push changes:
+2. Commit and push changes:
    ```bash
    git add .
    git commit -m "Your commit message"
    git push origin main
    ```
+3. GitHub Actions will automatically:
+   - Build your Jekyll site
+   - Deploy to GitHub Pages
+   - Your site will be live in 1-2 minutes!
 
-GitHub Pages will automatically serve the updated site from the `docs/` directory.
+### First-Time Setup
+
+**One-time configuration in your GitHub repository:**
+
+1. Go to your repository on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under "Build and deployment":
+   - **Source**: Select "GitHub Actions"
+4. Under **Custom domain** (if using haryun.io):
+   - Enter your domain: `haryun.io`
+   - Wait for DNS check to complete
+5. Enable "Enforce HTTPS"
+
+**DNS Configuration** (if using custom domain):
+
+Add these records to your DNS provider:
+```
+Type: A
+Name: @
+Value: 185.199.108.153
+Value: 185.199.109.153
+Value: 185.199.110.153
+Value: 185.199.111.153
+
+Type: CNAME
+Name: www
+Value: haryunio.github.io
+```
+
+### Monitoring Deployments
+
+- View deployment status: **Actions** tab in your GitHub repository
+- Each push triggers a new workflow
+- Green checkmark = successful deployment
+- Red X = build failed (check logs for errors)
 
 ## 🛠️ Maintenance
 
