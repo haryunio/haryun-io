@@ -6,13 +6,10 @@ gem "jekyll", "~> 4.4.1"
 # Ruby 3.5.0+ compatibility
 gem "logger"
 
-# Theme
-gem "minima", "~> 2.5"
-
-# Plugins
+# Scriptor theme plugins
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.17"
-  gem "jekyll-seo-tag", "~> 2.8"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
 end
 
 # Platform-specific gems

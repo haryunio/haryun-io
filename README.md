@@ -1,6 +1,6 @@
 # haryun-io
 
-Personal blog built with Jekyll 4.4.1 and hosted on GitHub Pages.
+Personal blog built with Jekyll 4.4.1 using the [Scriptor theme](https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme) and hosted on GitHub Pages.
 
 ## 📁 Repository Structure
 
@@ -41,22 +41,42 @@ haryun-io/
 
 ### Creating a New Post
 
-1. Create a new file in `haryun-io-blog/_posts/` following the naming convention:
+1. Create a new file in the appropriate subdirectory of `haryun-io-blog/_posts/`:
+   - **Articles**: `_posts/articles/YYYY-MM-DD-post-title.md`
+   - **Portfolio**: `_posts/portfolio/YYYY-MM-DD-post-title.md`
+
+   Example:
    ```
-   YYYY-MM-DD-post-title.markdown
+   _posts/articles/2024-12-10-my-new-article.md
    ```
 
 2. Add the front matter at the top of your post:
    ```yaml
    ---
    layout: post
-   title:  "Your Post Title"
-   date:   YYYY-MM-DD HH:MM:SS +0000
-   categories: category1 category2
+   title: "Your Post Title"
+   tags: [Article, Blockchain, Tutorial]  # or [Portfolio, Web3, DeFi]
+   featured_image_thumbnail:
+   featured_image:
+   featured: false
+   hidden: false
    ---
    ```
 
-3. Write your content in Markdown below the front matter.
+3. Write your content in Markdown. **Important**: Add `<!--more-->` after your first paragraph to create a preview excerpt on the home page:
+   ```markdown
+   ---
+   layout: post
+   title: "My Article"
+   tags: [Article]
+   ---
+   
+   This is the preview text that will show on the home page.
+   
+   <!--more-->
+   
+   This is the rest of your article content...
+   ```
 
 ### Editing Site Configuration
 

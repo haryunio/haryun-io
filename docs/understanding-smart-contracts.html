@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haryun&#39;s Blog</title>
+  <title>Understanding Smart Contracts in Blockchain</title>
   <meta name="description" content="Personal blog by Haryun">
-  <link rel="canonical" href="https://haryun.io/">
+  <link rel="canonical" href="https://haryun.io/understanding-smart-contracts">
   <link rel="alternate" type="application/rss+xml" title="Haryun&#39;s Blog Feed"
     href="https://haryun.io/feed.xml">
   
@@ -21,7 +21,7 @@
     <div class="inner">
       <header class="site-header">
   
-  <h1 class="site-title"><a class="logo-text" href="/">Haryun's Blog</a></h1>
+  <p class="site-title"><a class="logo-text" href="/">Haryun's Blog</a></p>
   
   <nav class="site-navigation">
     <div class="site-navigation-wrap">
@@ -30,8 +30,8 @@
         
         
         
-        <li class="menu-item nav-current">
-          <a class="nav-current" href="/">Home</a>
+        <li class="menu-item ">
+          <a class="" href="/">Home</a>
         </li>
         
         
@@ -73,83 +73,108 @@
 </header>
 
 
-<div class="site-description fadeInDown delay_05s">
-  <p>Personal blog by Haryun</p>
-</div><!-- .site-description -->
-
       <main class="main-content fadeInDown delay_075s">
 
-  
   <article class="post">
     <header class="post-header">
       <time class="post-date" datetime="2024-12-01">December 1, 2024</time>
-      <h2 class="post-title"><a href="/understanding-smart-contracts" rel="bookmark">Understanding Smart Contracts in Blockchain</a></h2>
+      <h1 class="post-title">Understanding Smart Contracts in Blockchain</h1>
       <div class="post-meta">
-        By <span class="post-author">Haryun</span><span
-          class="post-tags"> in
-          <a href="/tags/#Article" rel="tag">Article</a>, <a href="/tags/#Blockchain" rel="tag">Blockchain</a>, <a href="/tags/#Smart+Contracts" rel="tag">Smart Contracts</a></span>
+        By <span class="post-author">Haryun</span><span class="post-tags"> in <a href="/tags/#Article" rel="tag">Article</a>, <a href="/tags/#Blockchain" rel="tag">Blockchain</a>, <a href="/tags/#Smart+Contracts" rel="tag">Smart Contracts</a></span>
       </div><!-- .post-meta -->
       
     </header><!-- .post-header -->
     <div class="post-content">
-      
       <p>Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They run on blockchain networks and automatically execute when predetermined conditions are met.</p>
 
+<!--more-->
 
-      <p class="read-more"><a href="/understanding-smart-contracts" class="read-more-link">Continue reading &rarr;</a>
-      </p>
-      
+<h2 id="what-are-smart-contracts">What are Smart Contracts?</h2>
+
+<p>A smart contract is a computer program that automatically executes, controls, or documents legally relevant events according to the terms of a contract or an agreement. The objective is to reduce the need for trusted intermediaries, arbitration costs, and fraud losses, as well as to reduce malicious and accidental exceptions.</p>
+
+<h2 id="key-benefits">Key Benefits</h2>
+
+<ol>
+  <li>
+    <p><strong>Autonomy</strong> - You’re the one making the agreement; there’s no need to rely on a broker, lawyer, or other intermediaries.</p>
+  </li>
+  <li>
+    <p><strong>Trust</strong> - Your documents are encrypted on a shared ledger, making them secure and immutable.</p>
+  </li>
+  <li>
+    <p><strong>Backup</strong> - On the blockchain, each of your friends has your back. Your documents are duplicated many times over.</p>
+  </li>
+  <li>
+    <p><strong>Safety</strong> - Cryptography keeps your documents safe from unauthorized access.</p>
+  </li>
+  <li>
+    <p><strong>Speed</strong> - Smart contracts use software code to automate tasks, thereby reducing processing time.</p>
+  </li>
+</ol>
+
+<h2 id="example-use-cases">Example Use Cases</h2>
+
+<ul>
+  <li><strong>Financial Services</strong>: Automated loan disbursement, insurance claims processing</li>
+  <li><strong>Supply Chain</strong>: Tracking goods, automatic payments upon delivery</li>
+  <li><strong>Real Estate</strong>: Property transfers, rental agreements</li>
+  <li><strong>Healthcare</strong>: Patient data management, insurance verification</li>
+</ul>
+
+<h2 id="code-example">Code Example</h2>
+
+<p>Here’s a simple smart contract written in Solidity:</p>
+
+<pre><code class="language-solidity">pragma solidity ^0.8.0;
+
+contract SimpleStorage {
+    uint256 private storedData;
+    
+    function set(uint256 x) public {
+        storedData = x;
+    }
+    
+    function get() public view returns (uint256) {
+        return storedData;
+    }
+}
+</code></pre>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Smart contracts represent a fundamental shift in how we think about agreements and transactions. As blockchain technology continues to mature, we can expect to see even more innovative applications of smart contracts across various industries.</p>
+
+
     </div><!-- .post-content -->
+    <div class="post-share">
+      <span>Share:</span>
+      <a target="_blank"
+        href="https://twitter.com/intent/tweet?text=Understanding%20Smart%20Contracts%20in%20Blockchain&amp;url=https://haryun.io/understanding-smart-contracts" rel="noopener">Twitter</a>
+      <a target="_blank"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://haryun.io/understanding-smart-contracts&amp;t=Understanding%20Smart%20Contracts%20in%20Blockchain" rel="noopener">Facebook</a>
+    </div><!-- .share-post -->
+    <div class="author-box">
+      
+      <div class="author-avatar" style="background-image: url('images/author.png')"><span class="screen-reader-text">Haryun's Picture</span></div>
+      
+      <div class="author-details">
+        <h2 class="author-title">About Haryun</h2>
+        <div class="author-bio"><p>Blockchain Enthusiast and Software engineer.</p>
+</div>
+        
+        <span class="author-location">Seoul, South Korea</span>
+        
+        
+        <span class="author-website"><a href="https://haryun.io" target="_blank" rel="noopener">https://haryun.io</a></span>
+        
+      </div><!-- .author-details -->
+    </div><!-- .author-box -->
   </article><!-- .post -->
-  
-  <article class="post">
-    <header class="post-header">
-      <time class="post-date" datetime="2024-11-15">November 15, 2024</time>
-      <h2 class="post-title"><a href="/dex-platform-portfolio" rel="bookmark">Decentralized Token Exchange Platform</a></h2>
-      <div class="post-meta">
-        By <span class="post-author">Haryun</span><span
-          class="post-tags"> in
-          <a href="/tags/#Portfolio" rel="tag">Portfolio</a>, <a href="/tags/#Blockchain" rel="tag">Blockchain</a>, <a href="/tags/#Web3" rel="tag">Web3</a>, <a href="/tags/#DeFi" rel="tag">DeFi</a></span>
-      </div><!-- .post-meta -->
-      
-    </header><!-- .post-header -->
-    <div class="post-content">
-      
-      <p>A decentralized exchange (DEX) platform built on Ethereum that allows users to swap ERC-20 tokens without intermediaries.</p>
-
-
-      <p class="read-more"><a href="/dex-platform-portfolio" class="read-more-link">Continue reading &rarr;</a>
-      </p>
-      
-    </div><!-- .post-content -->
-  </article><!-- .post -->
-  
-  <article class="post">
-    <header class="post-header">
-      <time class="post-date" datetime="2024-10-20">October 20, 2024</time>
-      <h2 class="post-title"><a href="/future-of-web3" rel="bookmark">The Future of Web3 Development</a></h2>
-      <div class="post-meta">
-        By <span class="post-author">Haryun</span><span
-          class="post-tags"> in
-          <a href="/tags/#Article" rel="tag">Article</a>, <a href="/tags/#Web3" rel="tag">Web3</a>, <a href="/tags/#Technology" rel="tag">Technology</a>, <a href="/tags/#Blockchain" rel="tag">Blockchain</a></span>
-      </div><!-- .post-meta -->
-      
-    </header><!-- .post-header -->
-    <div class="post-content">
-      
-      <p>As we move into a new era of the internet, Web3 technologies are reshaping how we think about data ownership, privacy, and digital interactions.</p>
-
-
-      <p class="read-more"><a href="/future-of-web3" class="read-more-link">Continue reading &rarr;</a>
-      </p>
-      
-    </div><!-- .post-content -->
-  </article><!-- .post -->
-  
 
   
 
-</main><!-- .site-main -->
+</main><!-- .main-content -->
       <footer class="site-footer">
   <div class="offsite-links">
     
