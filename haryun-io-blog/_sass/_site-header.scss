@@ -10,8 +10,28 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding-bottom: 1.66em;
+  padding-bottom: 1.0em;
   padding-top: 2.5em;
+}
+
+.site-logo {
+  display: block;
+  margin-right: 10px;
+  
+  img {
+    display: block;
+    height: 32px;
+    max-width: none;
+    width: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-right: 5px;
+    
+    img {
+      height: 28px;
+    }
+  }
 }
 
 .site-title {
