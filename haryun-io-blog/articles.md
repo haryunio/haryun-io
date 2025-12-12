@@ -19,9 +19,10 @@ permalink: /articles/
           class="post-tags"> in
           {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag | cgi_escape }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
       </div><!-- .post-meta -->
-      {% if post.feature_image and post.feature_image != "" %}
+      {% assign preview_image = post.featured_image_thumbnail | default: post.feature_image | default: post.featured_image %}
+      {% if preview_image and preview_image != "" %}
       <figure class="post-thumbnail image-card width-wide">
-        <a href="{{site.baseurl}}{{post.url}}"><img src="{{ post.feature_image | relative_url }}"
+        <a href="{{site.baseurl}}{{post.url}}"><img src="{{ preview_image | relative_url }}"
             alt="{{ post.title }}"></a>
       </figure><!-- .post-thumbnail -->
       {% endif %}

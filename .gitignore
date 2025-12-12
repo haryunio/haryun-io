@@ -4,5 +4,8 @@ docs/
 # Mac OS
 .DS_Store
 
+# Reference Docs
+resume_raw.txt
+
 # Build scripts (deprecated)
 # run-build.sh is kept for local testing only

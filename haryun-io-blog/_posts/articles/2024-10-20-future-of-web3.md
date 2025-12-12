@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Future of Web3 Development"
-tags: [Article, Web3, Technology, Blockchain]
+tags: [Article, Blockchain]
 featured_image_thumbnail:
 featured_image:
 featured: false

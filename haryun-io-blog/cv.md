@@ -6,32 +6,49 @@ permalink: /cv/
 
 ## Haryun Shin
 
-**Blockchain Enthusiast & Software Engineer**  
+**Software Engineer (Blockchain, Data, AI/LLM Agents)**  
 Seoul, South Korea  
-[me@haryun.io](mailto:me@haryun.io) | [GitHub](https://github.com/haryunio)
+[me@haryun.io](mailto:me@haryun.io) | [GitHub](https://github.com/haryunio) | [Linkedin](https://www.linkedin.com/in/haryunshin/)
 
 ---
 
 ### Experience
 
 **Software Engineer**  
-*Firma Innovation Group* | September 2024 - Present
-- Firmachain development
+*Hereby* | June 2025 - Present  
+- AI development with Python (LLM/agent-based workflows)
+
+**Software Engineer, Development Team Lead**  
+*Firma Innovation Group* | September 2024 - Present  
+- Development team & project management
+- Firmachain core (cosmos-based mainnet) & smart contract development
+- Firmachain ecosystem and business strategy
 
 **Software Engineer**  
-*Peertec (GDAC)* | November 2023 - August 2024  
-- Cryptocurrency exchange (VASP) service development
-- Compliance, data analytics, KYC/AML, FDS system development
-- DeFi - CeFi fusion technology
+*Peertec (GDAC Exchange)* | November 2023 - August 2024  
+- Node.js & Python development for cryptocurrency exchange (VASP) systems
+- DeFi & CeFi fusion trading system development
+- Data engineering for compliance & risk-related system (KYC, AML, FDS)
+
+**Software Engineer, On-chain Data Team Lead**  
+*Oneall&Partners* | March 2020 - November 2023  
+- Built and operated blockchain data pipelines for on-chain analytics
+- Data-driven blockchain & cryptocurrency analysis for product/business decisions
+- Supported cryptocurrency business strategy with quantitative insights
 
 **Software Engineer**  
-*A* | August 2018 - November 2023  
-- Blockchain core development for EVM-based mainnet project
-- Web3 ecosystem projects
+*APIS* | August 2018 - November 2023  
+- APIS Mainnet & platform development (EVM-based ecosystem)
+- Smart contract development and audit support
+- Product engineering across Web3 services: APIS Pay (chatbot wallet), APISwap (DeFi)
 
 **Founder, CEO**  
 *SweetFab, Inc.* | April 2017 - August 2018  
-- Founder and CEO of physical computing education company
+- Founder and CEO of physical computing education startup
+
+**Engineer Intern**  
+*Daejeon Center for Creative Economy & Innovation* | January 2018 - February 2018  
+- Engineering internship at maker space
 
 ---
 
@@ -41,16 +58,7 @@ Seoul, South Korea
 *Kyungpook National University Law School* | 2025 - Present
 
 **Bachelor of Arts in Engineering Management**  
-*Konkuk Unviersity School of Engineering* | GPA 4.41 | 2023 - 2025
-
----
-
-### Skills
-
-- **Languages:** JavaScript, TypeScript, Python, Solidity
-- **Blockchain:** Ethereum, Smart Contracts, Web3
-- **Frameworks:** React, Node.js, Express
-- **Tools:** Git, Docker, AWS
+*Konkuk University School of Engineering* | GPA 4.41 | 2023 - 2025
 
 ---
 
@@ -59,6 +67,32 @@ Seoul, South Korea
 View my [Portfolio](/portfolio/) for detailed project showcases.
 
 ---
+
+### Skills
+
+**Languages**      | JavaScript, TypeScript, Python, Solidity
+**Blockchain**     | Ethereum, Cosmos, smart contracts, on-chain analytics
+**AI**             | LLMs, agents, applied AI workflows, vLLM
+**Backend / Data** | Node.js, data pipelines(AWS Athena, Glue), data analytics & visualization
+**Tools**          | Git, Docker, AWS
+
+---
+
+### Certifications
+
+**NVIDIA-Certified Associate: Generative AI LLMs** | March 2025
+**Advanced Data Analytics Semi-Professional (ADsP)** | March 2024
+**Industrial Engineer Information Processing** | September 2021
+
+---
+
+### Test Scores
+
+**TOEFL iBT** | 102 | September 2024
+**TOEIC** | 980 | November 2022
+
+---
+
 
 *Last updated: December 2025*
 

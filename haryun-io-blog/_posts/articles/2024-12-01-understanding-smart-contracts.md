@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding Smart Contracts in Blockchain"
-tags: [Article, Blockchain, Smart Contracts]
+tags: [Article, Blockchain]
 featured_image_thumbnail:
 featured_image:
 featured: true
