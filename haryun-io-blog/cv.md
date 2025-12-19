@@ -70,16 +70,18 @@ View my [Portfolio](/portfolio/) for detailed project showcases.
 
 ### Skills
 
-**Languages**      | JavaScript, TypeScript, Python, Solidity
+**Languages**      | Python, Solidity, JavaScript(TypeScript)
 **Blockchain**     | Ethereum, Cosmos, smart contracts, on-chain analytics
-**AI**             | LLMs, agents, applied AI workflows, vLLM
-**Backend / Data** | Node.js, data pipelines(AWS Athena, Glue), data analytics & visualization
-**Tools**          | Git, Docker, AWS
+**AI**             | LLMs, agents, applied AI workflows
+**Backend / Data** | Node.js, FastAPI, data pipelines(AWS Athena, Glue), data analytics & visualization
+**Tools**          | Git, Docker, AWS, vLLM
+**Business**       | project management, product planning & engineering, blockchain business strategy
 
 ---
 
 ### Certifications
 
+**Bigdata Analysis Engineer** | December 2025
 **NVIDIA-Certified Associate: Generative AI LLMs** | March 2025
 **Advanced Data Analytics Semi-Professional (ADsP)** | March 2024
 **Industrial Engineer Information Processing** | September 2021
