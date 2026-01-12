@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "APIS Platform — Platform 2.0 Web & Backend Modernization"
+categories: [portfolio]
 tags: [Portfolio, Blockchain, Backend, Product, Project Management]
 featured_image_thumbnail:
 featured_image:

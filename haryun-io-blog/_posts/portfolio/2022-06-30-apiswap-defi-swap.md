@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "APISwap — DeFi Swap & Wrapped Token Project"
+categories: [portfolio]
 tags: [Portfolio, Blockchain, DeFi, Product]
 featured_image_thumbnail:
 featured_image:

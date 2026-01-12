@@ -5,7 +5,7 @@ lang: en-US
 title: "Haryun's Blog"
 
 # A description of your site for meta tag, search engine results.
-description: "Personal blog by Haryun"
+description: "What I am into and what I am doing"
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
@@ -55,7 +55,7 @@ paginate: 6
 paginate_path: '/page:num/'
 
 # Permalinks
-permalink: /:title
+permalink: /:categories/:title
 
 # Conversion
 markdown: kramdown
