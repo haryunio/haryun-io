@@ -22,7 +22,7 @@ google_analytics: ""
 # Polyglot i18n configuration
 languages: ["en", "ko"]
 default_lang: "en"
-exclude_from_localization: ["assets", "images", "CNAME", "favicon.png"]
+exclude_from_localization: ["assets", "images", "CNAME", "favicon.png", "sitemap.xml"]
 parallel_localization: true
 lang_from_path: true
 
