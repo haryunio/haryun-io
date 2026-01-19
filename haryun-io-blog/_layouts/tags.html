@@ -19,11 +19,15 @@ layout: default
         <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>
         <ul class="archive-post-list">
         {% for post in site.tags[tag] %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="archive-meta"> — <time class="archive-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time></span></li>
+          {% if site.active_lang == 'ko' %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="archive-meta"> · <time class="archive-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%Y년 %-m월 %-d일" }}</time></span></li>
+          {% else %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="archive-meta"> · <time class="archive-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time></span></li>
+          {% endif %}
         {% endfor %}
         </ul><!-- .archive-post-list -->
       {% endfor %}
     </div><!-- .post-content -->
-    <p><a href="#top" class="archive-top-link">Return to top &#8593;</a></p>
+    <p><a href="#top" class="archive-top-link">{% if site.active_lang == 'ko' %}맨 위로 돌아가기 &#8593;{% else %}Return to top &#8593;{% endif %}</a></p>
   </article><!-- .post -->
 </main><!-- .site-main -->

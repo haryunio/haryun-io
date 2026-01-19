@@ -9,11 +9,28 @@
   {% else %}
   <p class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></p>
   {% endif %}
+  <div class="lang-switcher">
+    {% for lang in site.languages %}
+      {% if lang == 'ko' %}{% assign lang_display = 'KO' %}{% else %}{% assign lang_display = lang | upcase %}{% endif %}
+      {% if lang == site.active_lang %}
+        <span class="active">{{ lang_display }}</span>
+      {% else %}
+        {% if lang == site.default_lang %}
+          <a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
+        {% else %}
+          <a {% static_href %}href="/{{ lang }}{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
+        {% endif %}
+      {% endif %}
+      {% unless forloop.last %} | {% endunless %}
+    {% endfor %}
+  </div>
   <nav class="site-navigation">
     <div class="site-navigation-wrap">
       <h2 class="screen-reader-text">Main navigation</h2>
       <ul class="menu">
-        {% for item in site.navigation %}
+        {% assign nav_key = 'navigation_' | append: site.active_lang %}
+        {% assign localized_nav = site[nav_key] | default: site.navigation %}
+        {% for item in localized_nav %}
         {% assign current = nil %}
         {% if page.url == item.url %}
         {% assign current = 'nav-current' %}

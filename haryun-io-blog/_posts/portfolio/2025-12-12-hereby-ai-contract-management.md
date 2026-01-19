@@ -7,6 +7,8 @@ featured_image_thumbnail: /images/hereby/hereby_ui_small.png
 featured_image: /images/hereby/hereby_ui_small.png
 featured: false
 hidden: false
+lang: en
+page_id: hereby-ai-contract
 ---
 
 An AI-powered contract management platform for end-to-end contract workflows—preparation, review, execution, and post-signing operations—augmented with **OCR + LLM/agent** features. I contributed across **product management** and **development (backend, AI)** in Python.

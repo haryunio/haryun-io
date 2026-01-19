@@ -2,6 +2,8 @@
 layout: page
 title: CV
 permalink: /cv/
+lang: en
+page_id: cv
 ---
 
 ## Haryun Shin
@@ -70,27 +72,27 @@ View my [Portfolio](/portfolio/) for detailed project showcases.
 
 ### Skills
 
-**Languages**      | Python, Solidity, JavaScript(TypeScript)
-**Blockchain**     | Ethereum, Cosmos, smart contracts, on-chain analytics
-**AI**             | LLMs, agents, applied AI workflows
-**Backend / Data** | Node.js, FastAPI, data pipelines(AWS Athena, Glue), data analytics & visualization
-**Tools**          | Git, Docker, AWS, vLLM
+**Languages**      | Python, Solidity, JavaScript(TypeScript)  
+**Blockchain**     | Ethereum, Cosmos, smart contracts, on-chain analytics  
+**AI**             | LLMs, agents, applied AI workflows  
+**Backend / Data** | Node.js, FastAPI, data pipelines(AWS Athena, Glue), data analytics & visualization  
+**Tools**          | Git, Docker, AWS, vLLM  
 **Business**       | project management, product planning & engineering, blockchain business strategy
 
 ---
 
 ### Certifications
 
-**Bigdata Analysis Engineer** | December 2025
-**NVIDIA-Certified Associate: Generative AI LLMs** | March 2025
-**Advanced Data Analytics Semi-Professional (ADsP)** | March 2024
+**Bigdata Analysis Engineer** | December 2025  
+**NVIDIA-Certified Associate: Generative AI LLMs** | March 2025  
+**Advanced Data Analytics Semi-Professional (ADsP)** | March 2024  
 **Industrial Engineer Information Processing** | September 2021
 
 ---
 
 ### Test Scores
 
-**TOEFL iBT** | 102 | September 2024
+**TOEFL iBT** | 102 | September 2024  
 **TOEIC** | 980 | November 2022
 
 ---

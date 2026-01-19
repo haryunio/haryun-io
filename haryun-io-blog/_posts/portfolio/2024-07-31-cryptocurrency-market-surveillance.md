@@ -7,6 +7,8 @@ featured_image_thumbnail:
 featured_image:
 featured: false
 hidden: false
+lang: en
+page_id: gdac-market-surveillance
 ---
 
 Developed a **real-time monitoring system** for suspicious virtual-asset transactions to comply with the **Virtual Asset User Protection Act** and the regulations/guidance of the **FSS & FSC**.

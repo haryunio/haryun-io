@@ -7,6 +7,8 @@ featured_image_thumbnail:
 featured_image:
 featured: false
 hidden: false
+lang: en
+page_id: apis-platform
 ---
 
 Modernized APIS Platform with a better web interface and a more scalable backend infrastructure (Platform 2.0).

@@ -7,6 +7,8 @@ featured_image_thumbnail:
 featured_image:
 featured: false
 hidden: false
+lang: en
+page_id: apis-mainnet
 ---
 
 Contributed to APIS mainnet development and launch: smart contract implementation for chain-specific features, EVM compatibility validation, stress testing, and issue analysis through mainnet go-live.

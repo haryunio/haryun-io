@@ -7,6 +7,8 @@ featured_image_thumbnail:
 featured_image:
 featured: false
 hidden: false
+lang: en
+page_id: apiswap-defi-swap
 ---
 
 Built and shipped a DeFi swap project with smart contracts and a web interface, plus a local testing environment for verification.

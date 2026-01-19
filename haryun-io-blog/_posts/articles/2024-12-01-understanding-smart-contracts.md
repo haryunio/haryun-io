@@ -7,6 +7,8 @@ featured_image_thumbnail:
 featured_image:
 featured: true
 hidden: false
+lang: en
+page_id: understanding-smart-contracts
 ---
 
 Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They run on blockchain networks and automatically execute when predetermined conditions are met.

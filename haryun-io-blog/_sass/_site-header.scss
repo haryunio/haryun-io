@@ -57,6 +57,37 @@
   }
 }
 
+/* Language Switcher */
+.lang-switcher {
+  font-size: 0.77778rem;
+  font-weight: bold;
+  margin-right: 15px;
+  white-space: nowrap;
+
+  a {
+    color: _palette(meta);
+    text-decoration: none;
+    &:hover {
+      color: _palette(accent);
+    }
+  }
+
+  .active {
+    color: _palette(accent);
+  }
+
+  @media only screen and (max-width: 800px) {
+    position: absolute;
+    right: 60px;
+    top: 2.7em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    right: 50px;
+    top: 2.4em;
+  }
+}
+
 /* Navigation */
 .site-navigation {
   margin-left: auto;

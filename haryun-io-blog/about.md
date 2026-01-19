@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 description: Projects, track record, and insights from building across blockchain, data, and AI.
 feature_image: images/cup_image.jpg
+lang: en
+page_id: about
 ---
 
 I’m **Haryun 'Ryan' Shin**, a software engineer working across **blockchain**, **data**, and **AI**.  

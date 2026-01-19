@@ -19,6 +19,13 @@ favicon: images/favicon.png
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: ""
 
+# Polyglot i18n configuration
+languages: ["en", "ko"]
+default_lang: "en"
+exclude_from_localization: ["assets", "images", "CNAME", "favicon.png"]
+parallel_localization: true
+lang_from_path: true
+
 # Site navigation - each item must have a title and a url.
 navigation:
   - text: Home
@@ -32,6 +39,36 @@ navigation:
   - text: About
     url: /about/
   - text: Tags
+    url: /tags/
+
+# Localized navigation (English)
+navigation_en:
+  - text: Home
+    url: /
+  - text: Articles
+    url: /articles/
+  - text: Portfolio
+    url: /portfolio/
+  - text: CV
+    url: /cv/
+  - text: About
+    url: /about/
+  - text: Tags
+    url: /tags/
+
+# Localized navigation (Korean)
+navigation_ko:
+  - text: 홈
+    url: /
+  - text: 아티클
+    url: /articles/
+  - text: 포트폴리오
+    url: /portfolio/
+  - text: 이력서
+    url: /cv/
+  - text: 소개
+    url: /about/
+  - text: 태그
     url: /tags/
 
 # The shortname for your Disqus site to enable comments.
@@ -49,6 +86,7 @@ footer:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-polyglot
 
 # http://jekyllrb.com/docs/pagination/
 paginate: 6

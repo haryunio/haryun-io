@@ -2,6 +2,8 @@
 layout: page
 title: Articles
 permalink: /articles/
+lang: en
+page_id: articles
 ---
 
 <p class="page-description">Here you'll find my thoughts on technology, blockchain, software engineering, and more.</p>
@@ -15,7 +17,7 @@ permalink: /articles/
       <time class="post-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{post.date | date: "%B %-d, %Y" }}</time>
       <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{post.title}}</a></h2>
       <div class="post-meta">
-        By <span class="post-author">{{ site.data.author.name }}</span>{% if post.tags.size > 0 %}<span
+        By <span class="post-author">{{ site.data[site.active_lang].author.name | default: site.data.author.name }}</span>{% if post.tags.size > 0 %}<span
           class="post-tags"> in
           {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag | cgi_escape }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
       </div><!-- .post-meta -->

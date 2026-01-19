@@ -7,6 +7,8 @@ featured_image_thumbnail:
 featured_image:
 featured: false
 hidden: false
+lang: en
+page_id: future-of-web3
 ---
 
 As we move into a new era of the internet, Web3 technologies are reshaping how we think about data ownership, privacy, and digital interactions.
