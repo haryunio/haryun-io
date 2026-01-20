@@ -14,6 +14,13 @@
   padding-top: 2.5em;
 }
 
+.site-header-actions {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 15px;
+}
+
 .site-logo {
   display: block;
   margin-right: 10px;
@@ -78,15 +85,11 @@
 
 /* Navigation */
 .site-navigation {
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .lang-switcher--header {
-  margin-right: 15px;
-}
-
-.lang-switcher--menu {
-  display: none;
+  margin-right: 0;
 }
 
 .menu {
@@ -109,6 +112,10 @@
       color: _palette(accent);
     }
   }
+}
+
+.menu-item.lang-switcher--menu {
+  display: none;
 }
 
 .menu-toggle {

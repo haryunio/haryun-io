@@ -9,55 +9,57 @@
   {% else %}
   <p class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></p>
   {% endif %}
-  <nav class="site-navigation">
-    <div class="site-navigation-wrap">
-      <h2 class="screen-reader-text">Main navigation</h2>
-      <ul class="menu">
-        {% assign nav_key = 'navigation_' | append: site.active_lang %}
-        {% assign localized_nav = site[nav_key] | default: site.navigation %}
-        {% for item in localized_nav %}
-        {% assign current = nil %}
-        {% if page.url == item.url %}
-        {% assign current = 'nav-current' %}
-        {% endif %}
-        <li class="menu-item {{ current }}">
-          <a class="{{ current }}" href="{{ item.url }}">{{ item.text }}</a>
-        </li>
-        {% endfor %}
-        <li class="menu-item lang-switcher lang-switcher--menu">
-          {% for lang in site.languages %}
-            {% if lang == 'ko' %}{% assign lang_display = 'KO' %}{% else %}{% assign lang_display = lang | upcase %}{% endif %}
-            {% if lang == site.active_lang %}
-              <span class="active">{{ lang_display }}</span>
-            {% else %}
-              {% if lang == site.default_lang %}
-                <a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
-              {% else %}
-                <a {% static_href %}href="/{{ lang }}{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
-              {% endif %}
-            {% endif %}
-            {% unless forloop.last %} | {% endunless %}
+  <div class="site-header-actions">
+    <nav class="site-navigation">
+      <div class="site-navigation-wrap">
+        <h2 class="screen-reader-text">Main navigation</h2>
+        <ul class="menu">
+          {% assign nav_key = 'navigation_' | append: site.active_lang %}
+          {% assign localized_nav = site[nav_key] | default: site.navigation %}
+          {% for item in localized_nav %}
+          {% assign current = nil %}
+          {% if page.url == item.url %}
+          {% assign current = 'nav-current' %}
+          {% endif %}
+          <li class="menu-item {{ current }}">
+            <a class="{{ current }}" href="{{ item.url }}">{{ item.text }}</a>
+          </li>
           {% endfor %}
-        </li>
-      </ul><!-- .menu -->
-      <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span
-          class="icon-close" aria-hidden="true"></span></button>
-    </div><!-- .site-navigation-wrap -->
-  </nav><!-- .site-navigation -->
-  <div class="lang-switcher lang-switcher--header">
-    {% for lang in site.languages %}
-      {% if lang == 'ko' %}{% assign lang_display = 'KO' %}{% else %}{% assign lang_display = lang | upcase %}{% endif %}
-      {% if lang == site.active_lang %}
-        <span class="active">{{ lang_display }}</span>
-      {% else %}
-        {% if lang == site.default_lang %}
-          <a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
+          <li class="menu-item lang-switcher lang-switcher--menu">
+            {% for lang in site.languages %}
+              {% if lang == 'ko' %}{% assign lang_display = 'KO' %}{% else %}{% assign lang_display = lang | upcase %}{% endif %}
+              {% if lang == site.active_lang %}
+                <span class="active">{{ lang_display }}</span>
+              {% else %}
+                {% if lang == site.default_lang %}
+                  <a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
+                {% else %}
+                  <a {% static_href %}href="/{{ lang }}{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
+                {% endif %}
+              {% endif %}
+              {% unless forloop.last %} | {% endunless %}
+            {% endfor %}
+          </li>
+        </ul><!-- .menu -->
+        <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span
+            class="icon-close" aria-hidden="true"></span></button>
+      </div><!-- .site-navigation-wrap -->
+    </nav><!-- .site-navigation -->
+    <div class="lang-switcher lang-switcher--header">
+      {% for lang in site.languages %}
+        {% if lang == 'ko' %}{% assign lang_display = 'KO' %}{% else %}{% assign lang_display = lang | upcase %}{% endif %}
+        {% if lang == site.active_lang %}
+          <span class="active">{{ lang_display }}</span>
         {% else %}
-          <a {% static_href %}href="/{{ lang }}{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
+          {% if lang == site.default_lang %}
+            <a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
+          {% else %}
+            <a {% static_href %}href="/{{ lang }}{{ page.url }}"{% endstatic_href %}>{{ lang_display }}</a>
+          {% endif %}
         {% endif %}
-      {% endif %}
-      {% unless forloop.last %} | {% endunless %}
-    {% endfor %}
+        {% unless forloop.last %} | {% endunless %}
+      {% endfor %}
+    </div>
   </div>
   <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
 </header>
