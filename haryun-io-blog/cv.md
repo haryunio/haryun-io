@@ -57,7 +57,7 @@ Seoul, South Korea
 ### Education
 
 **Juris Doctor**  
-*Kyungpook National University Law School* | 2025 - Present
+*Kyungpook National University Law School* | 2026 - Present
 
 **Bachelor of Arts in Engineering Management**  
 *Konkuk University School of Engineering* | GPA 4.41 | 2023 - 2025
