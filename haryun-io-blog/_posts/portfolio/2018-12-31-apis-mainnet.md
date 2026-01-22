@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "APIS Mainnet — EVM-Compatible Mainnet Launch Engineering"
+title: "APIS Mainnet: EVM-Compatible Mainnet Launch Engineering"
 categories: [portfolio]
 tags: [Portfolio, Blockchain, Backend]
 featured_image_thumbnail:

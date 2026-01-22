@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hereby — AI-Powered Contract Management Platform"
+title: "Hereby: AI-Powered Contract Management Platform"
 categories: [portfolio]
 tags: [Portfolio, AI, Backend, Product, Project Management, Data]
 featured_image_thumbnail: /images/hereby/hereby_ui_small.png

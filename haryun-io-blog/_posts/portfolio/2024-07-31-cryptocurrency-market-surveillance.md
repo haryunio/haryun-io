@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GDAC Exchange — Cryptocurrency Market Surveillance"
+title: "GDAC Exchange: Cryptocurrency Market Surveillance"
 categories: [portfolio]
 tags: [Portfolio, Blockchain, Compliance, Data, Backend, Project Management]
 featured_image_thumbnail:
