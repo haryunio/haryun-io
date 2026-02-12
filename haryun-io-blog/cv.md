@@ -98,5 +98,5 @@ View my [Portfolio](/portfolio/) for detailed project showcases.
 ---
 
 
-*Last updated: December 2025*
+*Last updated: Feburary 2026*
 
