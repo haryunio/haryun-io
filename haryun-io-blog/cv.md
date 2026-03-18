@@ -17,11 +17,11 @@ Seoul, South Korea
 ### Experience
 
 **Software Engineer**  
-*Hereby* | June 2025 - Present  
+*Hereby* | June 2025 - March 2026  
 - AI development with Python (LLM/agent-based workflows)
 
 **Software Engineer, Development Team Lead**  
-*Firma Innovation Group* | September 2024 - Present  
+*Firma Innovation Group* | September 2024 - March 2026  
 - Development team & project management
 - Firmachain core (cosmos-based mainnet) & smart contract development
 - Firmachain ecosystem and business strategy
