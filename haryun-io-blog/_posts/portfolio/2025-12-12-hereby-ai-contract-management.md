@@ -11,7 +11,7 @@ lang: en
 page_id: hereby-ai-contract
 ---
 
-Hereby was an AI contract-management platform connecting preparation, review, execution, and post-signature operations. I worked across backend and AI engineering while helping translate requirements into a product and bring it to release. The hard part was not attaching OCR and an LLM to a document. It was making imperfect AI output inspectable and safe enough to support real contract work. My involvement in the project concluded when I left the company in March 2026.
+Hereby was an AI contract-management platform connecting preparation, review, execution, and post-signature operations. I worked across backend and AI engineering while helping translate requirements into a product and bring it to release. The hard part was not attaching OCR and an LLM to a document. It was making imperfect AI output inspectable and safe enough to support real contract work.
 
 <!--more-->
 
