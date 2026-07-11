@@ -1,0 +1,64 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign default_lang = site.default_lang | default: site.lang | default: "en" %}
+
+  {% assign pages = site.pages | where_exp: "page", "page.sitemap != false" %}
+  {% for page in pages %}
+    {% if page.url and page.url != "/sitemap.xml" %}
+      {% assign page_lang = page.lang | default: default_lang %}
+      {% if page_lang == default_lang %}
+        {% assign page_langs = site.languages %}
+      {% else %}
+        {% assign page_langs = page_lang | split: "," %}
+      {% endif %}
+      {% for lang in page_langs %}
+        {% assign page_url = page.url %}
+        {% if lang != default_lang %}
+          {% capture lang_prefix %}/{{ lang }}/{% endcapture %}
+          {% if page_url == "/" %}
+            {% assign page_url = "/" | append: lang | append: "/" %}
+          {% elsif page_url contains lang_prefix %}
+            {% assign page_url = page_url %}
+          {% else %}
+            {% assign page_url = "/" | append: lang | append: page_url %}
+          {% endif %}
+        {% endif %}
+  <url>
+    <loc>{{ page_url | absolute_url }}</loc>
+    {% if page.last_modified_at %}
+    <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+    {% endif %}
+  </url>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign posts = site.posts | where_exp: "post", "post.sitemap != false" %}
+  {% for post in posts %}
+    {% assign post_lang = post.lang | default: default_lang %}
+    {% if post_lang == default_lang %}
+      {% assign post_langs = site.languages %}
+    {% else %}
+      {% assign post_langs = post_lang | split: "," %}
+    {% endif %}
+    {% for lang in post_langs %}
+      {% assign post_url = post.url %}
+      {% if lang != default_lang %}
+        {% capture lang_prefix %}/{{ lang }}/{% endcapture %}
+        {% if post_url contains lang_prefix %}
+          {% assign post_url = post_url %}
+        {% else %}
+          {% assign post_url = "/" | append: lang | append: post_url %}
+        {% endif %}
+      {% endif %}
+  <url>
+    <loc>{{ post_url | absolute_url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+  </url>
+    {% endfor %}
+  {% endfor %}
+</urlset>

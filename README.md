@@ -1,232 +1,145 @@
-# haryun-io
+# haryun.io
 
-Personal blog built with Jekyll 4.4.1 using the [Scriptor theme](https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme) and hosted on GitHub Pages.
+[haryun.io](https://haryun.io)에 배포되는 개인 블로그입니다. Jekyll과 GitHub Pages를 기반으로 운영하며, 한국어와 영어 콘텐츠를 제공합니다.
 
-## 📁 Repository Structure
+## 기술 스택
 
+- [Jekyll 4.4.1](https://jekyllrb.com/)
+- [Scriptor Jekyll Theme](https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme)
+- [jekyll-polyglot](https://github.com/untra/polyglot): 다국어 페이지 생성
+- `jekyll-paginate`: 포스트 페이지네이션
+- `jekyll-sitemap`: 사이트맵 생성
+- Sass 및 Liquid 템플릿
+- GitHub Actions 및 GitHub Pages
+
+## 저장소 구조
+
+```text
+.
+├── .github/
+│   └── workflows/
+│       └── jekyll.yml          # GitHub Pages 빌드 및 배포
+├── CNAME                       # 커스텀 도메인
+├── README.md
+├── run-build.sh                # 로컬 정적 빌드 스크립트
+└── haryun-io-blog/             # Jekyll 사이트 소스
+    ├── _config.yml             # 사이트 및 플러그인 설정
+    ├── _data/                  # 작성자, 소셜 링크, 다국어 데이터
+    ├── _includes/              # 공통 Liquid 컴포넌트
+    ├── _layouts/               # 페이지와 포스트 레이아웃
+    ├── _posts/
+    │   ├── articles/           # 영문 아티클
+    │   ├── portfolio/          # 영문 포트폴리오
+    │   └── ko/                 # 한글 콘텐츠
+    ├── _sass/                  # Sass 스타일 모듈
+    ├── assets/                 # CSS, JavaScript, 폰트
+    ├── images/                 # 사이트 및 포스트 이미지
+    ├── Gemfile
+    └── Gemfile.lock
 ```
-haryun-io/
-├── haryun-io-blog/     # Source files for the Jekyll blog
-│   ├── _config.yml     # Jekyll configuration
-│   ├── _posts/         # Blog posts in Markdown
-│   ├── Gemfile         # Ruby dependencies
-│   └── ...
-├── docs/               # Generated static site (served by GitHub Pages)
-├── run-build.sh        # Build script
-└── CNAME               # Custom domain configuration
+
+실제 사이트 코드는 `haryun-io-blog/` 아래에 있습니다. `_site/`과 `.jekyll-cache/`는 Jekyll이 생성하는 로컬 산출물이며 Git에서 제외됩니다.
+
+## 블로그 구조
+
+블로그는 다음 영역으로 구성됩니다.
+
+- **Home**: 최신 포스트와 주요 콘텐츠
+- **Articles**: 기술, 법, 학습 및 관심 분야에 관한 글
+- **Portfolio**: 프로젝트와 경력 중심의 기록
+- **CV**: 경력과 활동 이력
+- **About**: 블로그와 작성자 소개
+- **Tags**: 태그별 포스트 탐색
+
+사이트는 영어를 기본 언어로 사용하고 한국어 페이지를 별도 경로로 생성합니다. 다국어 설정과 내비게이션은 `haryun-io-blog/_config.yml`에서 관리합니다.
+
+## 로컬 개발
+
+### 요구 사항
+
+- Ruby 3.3 권장
+- Bundler 2.6.9
+
+GitHub Actions 빌드 환경도 Ruby 3.3을 사용합니다.
+
+### 의존성 설치
+
+```bash
+cd haryun-io-blog
+gem install bundler:2.6.9  # 필요한 경우
+bundle install
 ```
 
-## 🚀 Getting Started
+### 개발 서버 실행
 
-### Prerequisites
+```bash
+cd haryun-io-blog
+bundle exec jekyll serve --livereload
+```
 
-- Ruby (3.0 or higher recommended)
-- Bundler (`gem install bundler`)
+기본 주소는 `http://localhost:4000`입니다. `_config.yml`을 변경한 경우 개발 서버를 다시 시작해야 합니다.
 
-### Initial Setup
+### 정적 빌드
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/haryunio/haryun-io.git
-   cd haryun-io
-   ```
+저장소 루트에서:
 
-2. Install dependencies:
-   ```bash
-   cd haryun-io-blog
-   bundle install
-   ```
+```bash
+./run-build.sh
+```
 
-## Editing the Blog
-
-### Creating a New Post
-
-1. Create a new file in the appropriate subdirectory of `haryun-io-blog/_posts/`:
-   - **Articles**: `_posts/articles/YYYY-MM-DD-post-title.md`
-   - **Portfolio**: `_posts/portfolio/YYYY-MM-DD-post-title.md`
-
-   Example:
-   ```
-   _posts/articles/2024-12-10-my-new-article.md
-   ```
-
-2. Add the front matter at the top of your post:
-   ```yaml
-   ---
-   layout: post
-   title: "Your Post Title"
-   tags: [Article, Blockchain, Tutorial]  # or [Portfolio, Web3, DeFi]
-   featured_image_thumbnail:
-   featured_image:
-   featured: false
-   hidden: false
-   ---
-   ```
-
-3. Write your content in Markdown. **Important**: Add `<!--more-->` after your first paragraph to create a preview excerpt on the home page:
-   ```markdown
-   ---
-   layout: post
-   title: "My Article"
-   tags: [Article]
-   ---
-   
-   This is the preview text that will show on the home page.
-   
-   <!--more-->
-   
-   This is the rest of your article content...
-   ```
-
-### Editing Site Configuration
-
-Edit `haryun-io-blog/_config.yml` to update:
-- Site title and description
-- Email and social media links
-- Theme settings
-- Other site-wide configurations
-
-**Note:** After changing `_config.yml`, you must restart the Jekyll server.
-
-### Editing About Page
-
-Edit `haryun-io-blog/about.markdown` to update your about page.
-
-## 🔨 Building the Site
-
-### Local Testing
+또는 Jekyll 디렉터리에서 직접 실행할 수 있습니다.
 
 ```bash
 cd haryun-io-blog
 bundle exec jekyll build
 ```
 
-Or use the build script:
-```bash
-./run-build.sh
-```
+생성된 사이트는 `haryun-io-blog/_site/`에 저장됩니다.
 
-### Production Deployment
+## 주요 설정
 
-**This blog uses GitHub Actions for automatic deployment!**
+### Jekyll
 
-No manual building needed. When you push to the `main` branch, GitHub Actions will:
-1. Automatically build your Jekyll site
-2. Deploy it to GitHub Pages
-3. Make it live at your custom domain
+`haryun-io-blog/_config.yml`에서 다음 항목을 관리합니다.
 
-See [Deploying Changes](#-deploying-changes) below for details.
+- 사이트 제목, 설명 및 URL
+- 지원 언어와 기본 언어
+- 언어별 내비게이션
+- 페이지네이션과 permalink
+- Sass 빌드 옵션
+- Jekyll 플러그인
 
-## 👀 Local Development
+설정 파일을 변경한 뒤에는 Jekyll 개발 서버를 재시작해야 합니다.
 
-### Start the Jekyll Development Server
+### 콘텐츠와 레이아웃
 
-```bash
-cd haryun-io-blog
-bundle exec jekyll serve
-```
+- 포스트: `haryun-io-blog/_posts/`
+- 고정 페이지: `haryun-io-blog/`의 Markdown 및 HTML 파일
+- 공통 레이아웃: `haryun-io-blog/_layouts/`
+- 헤더, 푸터 등 재사용 요소: `haryun-io-blog/_includes/`
+- 언어별 데이터: `haryun-io-blog/_data/`
+- 스타일: `haryun-io-blog/_sass/`, `haryun-io-blog/assets/css/`
 
-This will:
-- Build the site
-- Start a local server at `http://localhost:4000`
-- Auto-regenerate pages when you make changes (except `_config.yml`)
+## 배포
 
-### With Live Reload
+`main` 브랜치에 변경사항을 푸시하면 `.github/workflows/jekyll.yml`이 자동으로 실행됩니다.
 
-```bash
-bundle exec jekyll serve --livereload
-```
+1. 저장소 체크아웃
+2. Ruby 및 Bundler 의존성 준비
+3. `haryun-io-blog/`에서 프로덕션 Jekyll 빌드
+4. `_site/` 빌드 결과를 GitHub Pages artifact로 업로드
+5. GitHub Pages 배포
 
-## 📤 Deploying Changes
+수동 실행은 GitHub 저장소의 **Actions** 탭에서 가능하며, 같은 화면에서 빌드 및 배포 로그를 확인할 수 있습니다.
 
-### Automatic Deployment with GitHub Actions
+## 의존성 관리
 
-1. Make your edits in the `haryun-io-blog/` directory
-2. Commit and push changes:
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push origin main
-   ```
-3. GitHub Actions will automatically:
-   - Build your Jekyll site
-   - Deploy to GitHub Pages
-   - Your site will be live in 1-2 minutes!
-
-### First-Time Setup
-
-**One-time configuration in your GitHub repository:**
-
-1. Go to your repository on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Under "Build and deployment":
-   - **Source**: Select "GitHub Actions"
-4. Under **Custom domain** (if using haryun.io):
-   - Enter your domain: `haryun.io`
-   - Wait for DNS check to complete
-5. Enable "Enforce HTTPS"
-
-**DNS Configuration** (if using custom domain):
-
-Add these records to your DNS provider:
-```
-Type: A
-Name: @
-Value: 185.199.108.153
-Value: 185.199.109.153
-Value: 185.199.110.153
-Value: 185.199.111.153
-
-Type: CNAME
-Name: www
-Value: haryunio.github.io
-```
-
-### Monitoring Deployments
-
-- View deployment status: **Actions** tab in your GitHub repository
-- Each push triggers a new workflow
-- Green checkmark = successful deployment
-- Red X = build failed (check logs for errors)
-
-## 🛠️ Maintenance
-
-### Updating Dependencies
+의존성은 `haryun-io-blog/Gemfile`과 `Gemfile.lock`으로 관리합니다.
 
 ```bash
 cd haryun-io-blog
 bundle update
-```
-
-### Checking Current Versions
-
-```bash
-cd haryun-io-blog
 bundle exec jekyll --version
 ```
 
-Current version: **Jekyll 4.4.1**
-
-### Adding New Gems/Plugins
-
-1. Add the gem to `haryun-io-blog/Gemfile`
-2. Add the plugin to `_config.yml` under `plugins:` (if applicable)
-3. Run `bundle install`
-
-## 📝 Useful Jekyll Commands
-
-- `bundle exec jekyll serve` - Start development server
-- `bundle exec jekyll build` - Build the site
-- `bundle exec jekyll clean` - Remove generated files
-- `bundle exec jekyll serve --drafts` - Include draft posts in preview
-
-## 🔗 Resources
-
-- [Jekyll Documentation](https://jekyllrb.com/docs/)
-- [Markdown Guide](https://www.markdownguide.org/)
-- [Minima Theme](https://github.com/jekyll/minima) (Current theme)
-
-## 📧 Contact
-
-Website: https://haryun.io  
-Email: me@haryun.io
+새 Jekyll 플러그인을 추가할 때는 `Gemfile`과 `_config.yml`의 `plugins` 설정을 함께 확인해야 합니다.
