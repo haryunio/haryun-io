@@ -1,65 +1,52 @@
 ---
 layout: post
-title: "The Future of Web3 Development"
-tags: [Article, Web3, Technology, Blockchain]
+title: "What Will Web3 Leave Behind?"
+categories: [articles]
+tags: [Article, Blockchain]
 featured_image_thumbnail:
 featured_image:
 featured: false
 hidden: false
+lang: en
+page_id: future-of-web3
 ---
 
-As we move into a new era of the internet, Web3 technologies are reshaping how we think about data ownership, privacy, and digital interactions.
+Working in blockchain, I am often asked what the future of Web3 looks like. I used to answer with familiar ideas: decentralization, data ownership, and token economies. None of that is wrong. But after building and operating products and mainnets, I have come to think a different question matters more: **not what Web3 promises, but what it can genuinely solve better than existing systems.**
 
 <!--more-->
 
-## What is Web3?
+## Concrete problems before grand narratives
 
-Web3 represents the third generation of internet services, focusing on decentralization, blockchain technologies, and token-based economics. Unlike Web2, where platforms control user data, Web3 puts control back in the hands of users.
+Web3 is less a single technology than an attempt to redesign trust using blockchains, smart contracts, digital assets, and distributed networks. Instead of leaving one platform in control of the ledger and its rules, it allows multiple participants to verify shared state and transfer assets under rules that are visible in advance.
 
-## Key Principles
+The value of this structure is not simply that servers are distributed. It is that people and organizations that do not fully trust one another can still participate in the same system, with clearer boundaries around authority and state changes.
 
-### Decentralization
-No single entity controls the network. Data and applications are distributed across multiple nodes.
+That does not mean every service should be decentralized. A well-run centralized system may be better when fast responses, low cost, and responsive customer support matter most. A blockchain is not a general replacement for a database. It is a tool for situations in which **trust and ownership must be coordinated among parties with different interests**. Without that distinction, Web3 easily becomes a reason to add complexity rather than a way to solve a problem.
 
-### Trustless
-Users don't need to trust a third party. Smart contracts ensure transactions execute as programmed.
+## What building these systems taught me
 
-### Permissionless
-Anyone can participate without authorization from a governing body.
+The clearest lesson from working on mainnets, wallets, payments, and DeFi products was that protocol-level benefits and user value are not the same thing.
 
-## The Developer Experience
+Developers care about decentralization, censorship resistance, and public verifiability. Users first care whether a transaction completes, whether the fee makes sense, and what happens if they lose a key. A transaction can be perfectly valid on-chain and still represent a product failure if the user cannot understand its outcome.
 
-Building on Web3 requires learning new paradigms:
+Wallets show both the promise and the cost of Web3. They give people direct control over assets, but that control comes with responsibility for seed phrases and private keys. One signature can create an irreversible outcome, while users may also have to understand networks and gas fees. Autonomy increases at the protocol layer, but so does the cognitive burden at the product layer.
 
-```javascript
-// Connecting to MetaMask
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-await provider.send("eth_requestAccounts", []);
-const signer = provider.getSigner();
+Good Web3 products therefore do not keep drawing attention to the blockchain. They make risks and meaningful choices explicit while absorbing as much incidental complexity as possible: network selection, transaction status, and recovery paths. The goal is not to place blockchain at the center of every screen. It is to make value that would be difficult to create without a blockchain feel natural to use.
 
-// Interacting with smart contracts
-const contract = new ethers.Contract(contractAddress, abi, signer);
-const tx = await contract.transfer(recipient, amount);
-await tx.wait();
-```
+## The realities developers face
 
-## Challenges Ahead
+Smart contracts are difficult to change once deployed, and a small mistake can lead directly to asset loss. Frontends and backends can be updated; on-chain state and settled transactions usually cannot. Web3 development must therefore consider permissions, failure conditions, upgrade mechanisms, and emergency procedures before feature implementation is complete.
 
-1. **Scalability** - Current blockchain networks face throughput limitations
-2. **User Experience** - Crypto wallets and gas fees create friction
-3. **Regulation** - Legal frameworks are still evolving
-4. **Education** - Steep learning curve for developers and users
+Networks also operate under imperfect conditions. RPC endpoints become slow, chains become congested, and external price data arrives late. Submitting a transaction is not the same as finalizing it. Systems must handle repeated user actions without accidentally executing the same intent twice. This is where the determinism of a protocol meets the uncertainty of product operations.
 
-## Opportunities
+Regulation is not a condition that can simply be attached at the end. The legal character of an asset, customer due diligence, anti-money-laundering controls, privacy, and consumer protection all shape product architecture. What is technically possible is not always socially acceptable or sustainable. The next generation of Web3 developers will need to understand not only how to write code, but also how their systems distribute risk and responsibility.
 
-- **DeFi**: Decentralized finance applications
-- **NFTs**: Digital ownership and creator economy
-- **DAOs**: Decentralized autonomous organizations
-- **Identity**: Self-sovereign identity solutions
+## What is likely to remain
 
-## Conclusion
+Web3 was once described as if it would replace the entire existing internet. I now expect a more practical outcome. Not every service will move on-chain. Instead, blockchain will settle into areas that benefit from its specific properties: transferring ownership, maintaining a shared ledger across institutions, and enforcing rules that need to be publicly verifiable.
 
-Web3 is still in its early stages, but the potential is enormous. As developers, we have the opportunity to shape the future of the internet and build systems that are more open, transparent, and user-centric.
+Scalability continues to improve, while better wallet design and account abstraction can reduce user burden. Stablecoins, tokenized real-world assets, and cross-border settlement are producing cases in which blockchain can reduce real costs. Products that existed only because a token had been attached to them are less likely to last. Novelty alone does not create a reason to return.
 
-The transition won't happen overnight, but the foundations are being laid today.
+Whether one is optimistic or pessimistic about Web3 is no longer the most useful question. What matters is distinguishing problems that need this technology from those that do not—and, where it is needed, turning it into a dependable product.
 
+What survives will not be the grandest slogan. It will be systems that give people more meaningful control over assets and data, let parties with limited trust cooperate under shared rules, and make responsibility easier to locate. If Web3 contributes to that kind of change, the work will continue even if the name eventually changes.
