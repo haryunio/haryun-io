@@ -11,7 +11,7 @@ lang: en
 page_id: hereby-ai-contract
 ---
 
-Hereby is an AI contract-management platform connecting preparation, review, execution, and post-signature operations. I worked across backend and AI engineering while helping translate requirements into a product and bring it to release. The hard part was not attaching OCR and an LLM to a document. It was making imperfect AI output inspectable and safe enough to support real contract work.
+Hereby was an AI contract-management platform connecting preparation, review, execution, and post-signature operations. I worked across backend and AI engineering while helping translate requirements into a product and bring it to release. The hard part was not attaching OCR and an LLM to a document. It was making imperfect AI output inspectable and safe enough to support real contract work. My involvement in the project concluded when I left the company in March 2026.
 
 <!--more-->
 
@@ -19,7 +19,7 @@ Hereby is an AI contract-management platform connecting preparation, review, exe
 
 Contract information easily becomes fragmented. Source files, revisions, decisions in email and messaging, and post-signature obligations often live in separate tools. Finding one clause or confirming missing information can require rereading the document and retracing conversations.
 
-Hereby connects the contract, structured data, and action history in one view, with AI supporting review and follow-up work. The objective was not to automate legal judgment. It was to reduce repetitive retrieval and organization so users could focus on consequential decisions.
+Hereby connected the contract, structured data, and action history in one view, with AI supporting review and follow-up work. The objective was not to automate legal judgment. It was to reduce repetitive retrieval and organization so users could focus on consequential decisions.
 
 {% include image_full.html imageurl="/images/hereby/hereby_ui_1.png" title="Hereby contract viewer and AI assistant" caption="Hereby's contract view brings the source document, action history, and review guidance together." %}
 
@@ -30,7 +30,7 @@ Hereby connects the contract, structured data, and action history in one view, w
 - Product requirements and release execution
 - Internal LLM inference infrastructure
 
-**Period:** December 2024–present
+**Period:** December 2024–March 2026
 
 ## Turning documents into usable data
 

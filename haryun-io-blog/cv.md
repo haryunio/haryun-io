@@ -61,6 +61,8 @@ Daegu, South Korea
 **Juris Doctor**  
 *Kyungpook National University Law School* | 2026 - Present
 
+First-year, first-semester GPA: 4.3/4.3 | Rank: 1/130
+
 **Bachelor of Arts in Engineering Management**  
 *Konkuk University School of Engineering* | GPA 4.41 (Rank: 1/75) | 2023 - 2025
 
@@ -100,5 +102,4 @@ View my [Portfolio](/portfolio/) for detailed project showcases.
 ---
 
 
-*Last updated: May 2026*
-
+*Last updated: July 2026*
