@@ -16,7 +16,7 @@ Daegu, South Korea
 
 ### Experience
 
-**Law School Practicum Trainee**<br>
+**Legal Internship**<br>
 *Constitutional Research Institute, Constitutional Court of Korea* | June 2026 - July 2026
 
 - Studied constitutional adjudication practice
