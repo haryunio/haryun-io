@@ -16,6 +16,13 @@ Daegu, South Korea
 
 ### Experience
 
+**Law School Practicum Trainee**<br>
+*Constitutional Research Institute, Constitutional Court of Korea* | June 2026 - July 2026
+
+- Studied constitutional adjudication practice
+- Drafted a constitutional complaint petition
+- Prepared a research report on constitutional complaint adjudication
+
 **Software Engineer**  
 *Hereby* | June 2025 - March 2026  
 - Project design and management
