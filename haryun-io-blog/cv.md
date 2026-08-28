@@ -66,7 +66,7 @@ Daegu, South Korea
 ### Education
 
 **Juris Doctor**  
-*Kyungpook National University Law School* | In progress (GPA: 4.3/4.3) | 2026 - Present
+*Kyungpook National University Law School* | In progress (GPA: 4.3/4.3, Rank: 1/130) | 2026 - Present
 
 **Bachelor of Arts in Engineering Management**  
 *Konkuk University School of Engineering* | GPA 4.41 (Rank: 1/75) | 2023 - 2025
@@ -90,6 +90,15 @@ View my [Portfolio](/portfolio/) for detailed project showcases.
 
 ---
 
+### Awards
+
+**Excellence Award, 1st Law School AI Challenge Main Round**<br>
+*Managing Partner Award, Bae, Kim & Lee LLC* | June 2026
+
+- Ranked first among teams assigned to a main-round problem requiring a legal memorandum on interconnected M&A, AI, data privacy, and National Assembly audit issues
+
+---
+
 ### Certifications
 
 **Bigdata Analysis Engineer** | December 2025  
@@ -107,4 +116,4 @@ View my [Portfolio](/portfolio/) for detailed project showcases.
 ---
 
 
-*Last updated: July 2026*
+*Last updated: August 2026*
