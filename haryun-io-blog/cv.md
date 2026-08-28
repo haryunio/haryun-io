@@ -95,7 +95,11 @@ View my [Portfolio](/portfolio/) for detailed project showcases.
 **Excellence Award, 1st Law School AI Challenge Main Round**<br>
 *Managing Partner Award, Bae, Kim & Lee LLC* | June 2026
 
-- Ranked first among teams assigned to a main-round problem requiring a legal memorandum on interconnected M&A, AI, data privacy, and National Assembly audit issues
+**Grand Prize, 2nd NongHyup Agricultural Fintech Ideathon**<br>
+*NongHyup* | November 2017
+
+**Minister's Award, Industry and Energy Category, National Science Exhibition**<br>
+*Ministry of Trade, Industry and Energy* | September 2017
 
 ---
 
